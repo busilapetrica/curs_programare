@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
-//#1258.Se dau 2 numere naturale. Calculați diferenţa lor.
+//#1260.Se dau 2 numere naturale. Calculați suma, diferenţa, produsul şi câtul lor, în această ordine.
  int main(){
-   int a,b, DiferentaNumere;
-   a=4;
-   b=2;
-   DiferentaNumere = a-b;
-   //afisare diferenta numere
-   cout<< DiferentaDumere;
-   return 0;
+    int a,b, suma, diferenta,produsul, catul;
+    cin>> a >> b;
+    suma = a+b;
+    diferenta = a/b;
+    produsul = a*b;
+    catul = a%b;
+    //afisare rezultate
+    cout <<suma <<" " <<diferenta <<" " <<produsul << " " << catul;
+    return 0;
 }
