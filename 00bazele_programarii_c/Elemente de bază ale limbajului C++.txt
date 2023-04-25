@@ -1,0 +1,5 @@
+1. Introducere in C++
+Programul scris intr-un limbaj de programare se numeste program sursa si trebuie tradus intr-un limbaj pe care il intelege procesorul numit cod masina sau program executabil
+programul specializat se numeste compilator compilator.Iar operatia se numeste inerpretare sau compilare
+
+Fisierul sursa trebuie scris cu extensia .cpp 
