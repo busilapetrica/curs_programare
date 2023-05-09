@@ -1,5 +1,50 @@
 1. Introducere in C++
 Programul scris intr-un limbaj de programare se numeste program sursa si trebuie tradus intr-un limbaj pe care il intelege procesorul numit cod masina sau program executabil
-programul specializat se numeste compilator compilator.Iar operatia se numeste inerpretare sau compilare
+programul specializat se numeste compilator.Iar operatia se numeste inerpretare sau compilare
 
 Fisierul sursa trebuie scris cu extensia .cpp 
+daca este corect sintactic se obtine fisierul obiect cu extensia .o sau .obj
+In windows executabilul are extensia exe
+
+Tipuri de date;
+1.tipuri simple; int, float, double, char, bool, void.
+2.tipuri derivate; tablou, structura/clasa, enumerate.
+
+INT 
+Permite memorarea de valori intregi pozitive sau negative si ocupa 4 octeti
+[−2^31,2^31−1], adică [−2.147.483.648,2.147.483.647].
+
+Float
+Permite memorarea de valori pe 4 octeti
+float p = 3.14, r = 2.5;
+
+Double
+Permite memorarea de valori pe 8 octeti
+double x = 1.24E+07; // înseamnă 1.24 * 10^7
+
+Char
+tipul de date char nu memoreaza caracterul, ci un numar corespunzator caracterului
+char c='A';
+
+Boolean
+operatiile se fac cu operatii cu valori de true sau false si reprezinta printr-un octet 0 sau 1
+bool pp = false;
+
+Modificatori de tip 
+Schimbarea modulului care face reprezentarea interna a datei si pot fi aplicate datelor de tip int, double sau char.
+signed unde se pot folosi valori negative(4 octeti cu semn)
+unsigned unde ia doar valori positive(4 octeti fara semn)
+long unde este echivalent cu int ( 4 octeti cu semn)
+schort echivalent int (2 octeti cu semn)
+unsigned short ( 2 octeti fara semn)
+unsigned long log ( 8 octeti fara semn )
+
+
+
+
+
+
+
+
+
+
