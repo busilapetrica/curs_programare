@@ -6,6 +6,24 @@ Fisierul sursa trebuie scris cu extensia .cpp
 daca este corect sintactic se obtine fisierul obiect cu extensia .o sau .obj
 In windows executabilul are extensia exe
 
+
+Liniile care incep cu // sau /* ... */ se numesc comenturi.
+// - comenteaza o linie si /* .. */ comenteaza tot ce este scris intre.
+In cazul nostru descrierea problemei:
+/*Sa se scrie un program care citeste de la tastatura un numar
+natural cu exact trei cifre si determina numarul obtinut prin eliminarea cifrei din mijloc.*/
+
+Liniile care incep cu # se numesc directive procesor.ele sunt interpretate inainte de compilare si poate insera continutul altor fisiere sau eliminarea sectiunilor de tip spatiu sau text.
+
+#include <iostream> - permite realizarea de citire si afisare
+#include <string> - 
+using namespace std; - inlocuieste scrierea de fiecare data  std::cout.  cout  și endl, este un identificator din spațiul de nume std și pentrua se referi mai simplu la indicatori putem sa folosim instructiunea using namespace std;
+
+urmatoarea linie reprezinta declararea functii cu numele main. functia main este speciala si se lanseaza o data cu 
+programul de executie.acoladele delimiteaza instructiuniile functiei main
+int main (){
+
+int numarIntrare, nr1, nr3, rezultat;
 Tipuri de date;
 1.tipuri simple; int, float, double, char, bool, void.
 2.tipuri derivate; tablou, structura/clasa, enumerate.
@@ -38,6 +56,47 @@ long unde este echivalent cu int ( 4 octeti cu semn)
 schort echivalent int (2 octeti cu semn)
 unsigned short ( 2 octeti fara semn)
 unsigned long log ( 8 octeti fara semn )
+
+
+operații de intrare: datele intră în program, programul citește date
+operații de ieșire: datele ies din program, programul afișează dat
+Afisarea poate fi accesata cu streamul de iesire impreuna cu operatoul de insertie << 
+  cout << "Introdu un numar de trei cifre intre 100 si 1000" << endl;
+
+  cin >> numarIntrare;
+  if (numarIntrare < 100 || numarIntrare >= 1000)
+    {
+      cout << "Numarul introdus nu se afla in range-ul 100-1000" << endl;
+      }else{
+       nr1 = (numarIntrare/100)*10;
+        nr3 = numarIntrare%10;
+      rezultat = nr1+nr3;
+    }
+  cout << rezultat;
+  return 0;
+
+Valoarea 0 semnifica faptul că programul s-a încheiat cu succes!
+Dacă în programul nostru ar fi fost și alte instrucțiuni după instrucțiunea return 0;, acestea nu s-ar mai fi executat.
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
