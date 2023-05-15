@@ -24,6 +24,10 @@ programul de executie.acoladele delimiteaza instructiuniile functiei main
 int main (){
 
 int numarIntrare, nr1, nr3, rezultat;
+Variabile
+tipul variabilei - stabileste ce fel de valori poate sa ia variabila
+indicatorul variabilei reprezinta un nume pentru variabila 
+
 Tipuri de date;
 1.tipuri simple; int, float, double, char, bool, void.
 2.tipuri derivate; tablou, structura/clasa, enumerate.
@@ -68,6 +72,19 @@ Afisarea poate fi accesata cu streamul de iesire impreuna cu operatoul de insert
 Stream-ul de intrare >>cin
 In cele mai multe cazuri de intrare se foloseste stream-ul cin impreuna cu operatorul de extragere <<
  cin >> numarIntrare;
+
+Operatii
+Operatorii relaționali
+Sunt: <, >, <=, >=, ==, != . (mai mic <, mai mare >, mai mic sau egal<=, mai mare sau egal >=, egalitate ==, nu este egal!=)
+operatorii relationali stabileste daca intre doua numere are loc o relatie.
+rezultatul operatiilor este de tip bool, adevarat sau fals, 0 si 1.
+
+Operatorii logici
+Sunt: !, ||, &&. (negatia  !, sau ||, si $$)
+
+Operatorii aritmetici
+-aritmetici +,-,*, /, %
+-unari +, - (  + X = 11, - Y = 3.5, - + N = -11)
 
   if (numarIntrare < 100 || numarIntrare >= 1000)
     {
