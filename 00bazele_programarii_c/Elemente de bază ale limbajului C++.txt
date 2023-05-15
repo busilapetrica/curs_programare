@@ -58,12 +58,17 @@ unsigned short ( 2 octeti fara semn)
 unsigned long log ( 8 octeti fara semn )
 
 
-operații de intrare: datele intră în program, programul citește date
-operații de ieșire: datele ies din program, programul afișează dat
+operații de intrare: datele intra in program 
+operații de ieșire: datele ies din program
+
+Stream-ul de iesire <<cout
 Afisarea poate fi accesata cu streamul de iesire impreuna cu operatoul de insertie << 
   cout << "Introdu un numar de trei cifre intre 100 si 1000" << endl;
 
-  cin >> numarIntrare;
+Stream-ul de intrare >>cin
+In cele mai multe cazuri de intrare se foloseste stream-ul cin impreuna cu operatorul de extragere <<
+ cin >> numarIntrare;
+
   if (numarIntrare < 100 || numarIntrare >= 1000)
     {
       cout << "Numarul introdus nu se afla in range-ul 100-1000" << endl;
