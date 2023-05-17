@@ -12,7 +12,7 @@ int main (){
   
   if (size_cnp < 13){
       cout << "Cnp-ul are mai putine cifre";
-    }else if (size_cnp < 13){
+    }else if (size_cnp > 13){
      cout << "Cnp-ul are mai multe cifre";   
     }else{
       for (long int i = 12; i >= 0; i--){
