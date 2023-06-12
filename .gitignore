@@ -6,6 +6,7 @@
 *.[Oo]bj
 *cbp
 *.dependent
+.depend
 *.layout
 *.user
 *.aps
