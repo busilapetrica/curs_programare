@@ -18,6 +18,9 @@ Liniile care incep cu # se numesc directive procesor.ele sunt interpretate inain
 #include <iostream> - permite realizarea de citire si afisare
 #include <string> - 
 using namespace std; - inlocuieste scrierea de fiecare data  std::cout.  cout  și endl, este un identificator din spațiul de nume std și pentrua se referi mai simplu la indicatori putem sa folosim instructiunea using namespace std;
+printf & scanf both are library function from <stdio.h> header file
+cin & cout both are object of class from <iostream> header file
+
 
 urmatoarea linie reprezinta declararea functii cu numele main. functia main este speciala si se lanseaza o data cu 
 programul de executie.acoladele delimiteaza instructiuniile functiei main
@@ -85,6 +88,8 @@ Sunt: !, ||, &&. (negatia  !, sau ||, si $$)
 Operatorii aritmetici
 -aritmetici +,-,*, /, %
 -unari +, - (  + X = 11, - Y = 3.5, - + N = -11)
+
+
 
   if (numarIntrare < 100 || numarIntrare >= 1000)
     {
