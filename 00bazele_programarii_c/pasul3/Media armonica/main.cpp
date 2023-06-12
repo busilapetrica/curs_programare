@@ -1,6 +1,10 @@
 /*
 Se dau n numere naturale. Calculați media armonică
 a celor n numere citite cu 2 zecimale exacte.
+EX:
+	5
+1 2 3 4 5
+*/
 */
 	#include <iostream>
 	#include <iomanip>
