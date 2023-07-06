@@ -13,15 +13,31 @@ using namespace std;
 int main() {
   int numar1, numar2, type;
   cin >> numar1 >> numar2 >> type;
-  if (type == 1)
+
+ switch( type == 1){
+case 1:
     cout << numar1 + numar2;
-  else if (type == 2)
+    break;
+case 2 :
     cout << numar1 - numar2;
-  else if (type == 3)
+    break;
+case 3:
     cout << numar1 * numar2;
-  else if (type == 4)
-    cout << numar1 / numar2;
-  else if (type == 5)
+    break;
+case 4:
+ cout << numar1 / numar2;
+    break;
+case 5:
     cout << numar1 % numar2;
-  return 0;
+    break;
+case 6:
+    cout << numar1 % numar2;
+    break;
 }
+
+
+ return 0;
+}
+
+
+
