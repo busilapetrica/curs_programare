@@ -1,20 +1,19 @@
 /*
-Se citesc două numere naturale n și m.
-Afișați în ordine descrescătoare primii n multipli nenuli ai numărului m.
+Se citesc două numere naturale numar1 și numar2.
+Afișați în ordine descrescătoare primii 'numar1' multipli nenuli ai 'numar2'.
+Intrare: 3 6
+Ieșire: 18 12 6
 */
 #include <iostream>
 
 using namespace std;
 int main() {
-  int numar1, numar2, temp;
-  cin >> numar2 >> numar1;
-  temp = numar1;
-  for (int i = 1; i < numar2; i++) {
-    numar1 = numar1 + temp;
+  int numar1, numar2;
+  cin >> numar1 >> numar2;
+
+   for (int i = numar2 * numar1; i >= numar1; i -= numar2) {
+    cout << i << " ";
   }
-  for (int i = 1; i <= numar2; i++) {
-    cout << numar1 << " ";
-    numar1 = numar1 - temp;
-  }
+
   return 0;
 }
