@@ -1,14 +1,15 @@
 /*
-e dă un număr natural n.
-Afișați în ordine crescătoare numerele naturale pare nenule mai mici sau egale cu n.
+Ridicarea la putere. 10 la puterea n
 */
-#include <iostream>
+#include    <iostream>
 using namespace std;
-int main() {
-  int n;
-  cin >> n;
-  cout << 1;
-  for (int i = 1; i <= n; ++i)
-    cout << 0;
-  return 0;
+int main(){
+    int n;
+    long long rezultat = 1;
+    cin >> n;
+    for(int i = 1; i <= n; i++){
+        rezultat = rezultat * 10;
+}
+    cout << rezultat;
+    return 0;
 }
