@@ -1,32 +1,38 @@
 //Scrieți un program care să afișeze, în ordine crescătoare,
 //toate numerele naturale formate din câte n cifre și care au suma
-//cifrelor egală cu s, precum și câte astfel de numere există.
+//cifrelor egală cu sumaCifrelor, precum și câte astfel de numere există.
 //EX:Intrare:2 5
 //Ieșire
 //14 23 32 41 50
 //5
 
 #include <iostream>
+#include <cmath>
 using namespace std;
+
+int calculeazaSumaCifrelor(int numar) {
+    int suma = 0;
+    while (numar > 0) {
+        suma += numar % 10;
+        numar /= 10;
+    }
+    return suma;
+}
+
 int main() {
     int numarCifre, sumaCifre;
     cin >> numarCifre >> sumaCifre;
-    int numereGasite = 0;
 
-    for (int numarCurent = 0; numarCurent <= 9999999; numarCurent++) {
-        int sumaCifreCurent = 0;
-        int tempNumar = numarCurent;
-        // Calculează suma cifrelor numărului curent
-        while (tempNumar > 0) {
-            sumaCifreCurent += tempNumar % 10;
-            tempNumar /= 10;
-        }
-        // Verifică dacă numărul curent îndeplinește condițiile
-        if (sumaCifreCurent == sumaCifre && to_string(numarCurent).length() == numarCifre) {
-            cout << numarCurent << ' ';
-            numereGasite++;
+    int contorNumere = 0;
+
+    for (int numar = pow(10, numarCifre - 1); numar < pow(10, numarCifre); ++numar) {
+        if (calculeazaSumaCifrelor(numar) == sumaCifre) {
+            cout << numar << ' ';
+            ++contorNumere;
         }
     }
-    cout << endl << numereGasite;
+
+    cout << endl << contorNumere;
+
     return 0;
 }
