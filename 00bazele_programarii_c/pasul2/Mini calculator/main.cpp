@@ -12,9 +12,10 @@ using namespace std;
 
 int main() {
   int numar1, numar2, type;
+  cout << "scrie a,b,c unde c=tipul de operatie 1(+),2(-),3(*),4(/),5(%)" << endl;
   cin >> numar1 >> numar2 >> type;
 
- switch( type == 1){
+ switch(type){
 case 1:
     cout << numar1 + numar2;
     break;
@@ -30,12 +31,7 @@ case 4:
 case 5:
     cout << numar1 % numar2;
     break;
-case 6:
-    cout << numar1 % numar2;
-    break;
 }
-
-
  return 0;
 }
 
