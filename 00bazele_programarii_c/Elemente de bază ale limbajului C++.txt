@@ -89,17 +89,37 @@ Operatorii aritmetici
 -aritmetici +,-,*, /, %
 -unari +, - (  + X = 11, - Y = 3.5, - + N = -11)
 
+2.Structuri de control 
 
+
+-structura liniara 
+-structura alternativa ( sau structuri de decizie)
+-structuri repetitive
+
+In structura alternativa cea mai utilizata este instructiunea if.
 
   if (numarIntrare < 100 || numarIntrare >= 1000)
     {
       cout << "Numarul introdus nu se afla in range-ul 100-1000" << endl;
+
+Instructiunea else se executa doar daca este falsa.
+
+
       }else{
        nr1 = (numarIntrare/100)*10;
         nr3 = numarIntrare%10;
       rezultat = nr1+nr3;
     }
   cout << rezultat;
+
+Structuri repetitive mai sunt : 
+while cu un numar repetitiv cu pasi necunoscuti;
+do..while intai executa apoi codul apoi face erificarea.
+for este o structura repetitiva cu un numar cunoscut de pasi
+
+
+
+
   return 0;
 
 Valoarea 0 semnifica faptul că programul s-a încheiat cu succes!
