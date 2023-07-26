@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1690400216 source:c:\users\busil\desktop\curs_programare\00bazele_programarii_c\extra\numarul de grade a unghiului\main.cpp
+	<fstream>
+	<math.h>
+
