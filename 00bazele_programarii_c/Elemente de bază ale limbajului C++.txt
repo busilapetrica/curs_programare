@@ -164,7 +164,6 @@ using namespace first; // x= 1 dar daca foloseam using namespace second atunci x
 cout<<x; //  sau putem sa punem direct cout<<fist::x; fara a utiliza: using namespace first;
 return 0;
 }
-
 //exemplu avem atunci cand folosim: using namespace std;
 //ca sa nu mai scriem de fiecare data std::cout
 _______________________________________
@@ -184,11 +183,26 @@ _______________________________________
 
 // functii librarii
 https://cplusplus.com
-
 ______________________________________
 
 
+Ternary operator?: =replacement to an if/else statement
 
+int main(){
+    int grade = 30;
+    
+    if(grade>=60){
+        cout<<"you pass";
+    }else{
+       cout<<"you fail"; 
+    }
+   // sau if-ul il putem scrie prescurtat : 
+    grade>=60 ? cout<<"you pass" : cout<<"you fail";
+  sau 
+   cout<< (grade >=60 ? "you pass" : "you fail");
+    return 0;
+}
+_____________________________________________________
 
 
 
