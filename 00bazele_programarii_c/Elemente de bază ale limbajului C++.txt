@@ -176,8 +176,8 @@ cin>>name;
 pentru a luat intreaga linie
 
 string name;
-getline(cin >>ws,name); // >>ws Extragerea se oprește de indata ce este gasit un caracter care nu are spațiu alb.
-                        // Aceste caractere de spații albe extrase sunt eliminate.
+getline(cin >>ws,name); // >>ws Extragerea se oprește de indata ce este gasit un caracter care nu are spațiu gol.
+                        // Aceste caractere de spații goale extrase sunt eliminate.
 cout<<name;
 _______________________________________
 
@@ -204,9 +204,15 @@ int main(){
 }
 _____________________________________________________
 
-
-
-
+functii pentru string-uri:
+length();    //luam cate caractere sunt 
+empty();    // verificam daca variabila este goala
+clear();   // sterge ce a stocat variabila  
+append(); // putem sa adaugam un string la sfarsitul unei variabile 
+at();     // putem sa luam un string dintr-un char at(1), at(2), at(3)
+insert(); // inserare unui caracter  insert(pozitia,caracterul) 
+find();  // putem sa cautam un caracter, returneaza indexul (pozitia  incepand de la 0) caracterului
+erase(); // erase(0,3) -- sterge primele 3 caractere
 
 
 
