@@ -117,23 +117,75 @@ while cu un numar repetitiv cu pasi necunoscuti;
 do..while intai executa apoi codul apoi face erificarea.
 for este o structura repetitiva cu un numar cunoscut de pasi
 
-
-
-
   return 0;
 
 Valoarea 0 semnifica faptul că programul s-a încheiat cu succes!
 Dacă în programul nostru ar fi fost și alte instrucțiuni după instrucțiunea return 0;, acestea nu s-ar mai fi executat.
 }
 
+__________________________________________
 
+const double PI = 3.14159; // scriem variabila cu litere mari pentru a se diferentia 
+PI = 420.69;  //dupa afisare ar trebuii sa dea eroare pentru ca, const variabila nu merge rescrisa
+__________________________________________
+Type converios = conversia unei valori a unui tip de date în altul
+Implicit = automatic
+Explicit = schimbarea unui tip de data in alta
 
+int correct =8;
+int question = 10;
+double score = correct/(double)question *100;   // daca nu converteam variabila question rezultatul era 0%
+cout << score << "%";  // rezultatul corect care este 80%
+__________________________________________
+typedef = cuvant cheie rezervat folosit pentru a crea un nume suplimentar pentru un alt tip de date
 
+#include <vector>
 
+typedef int number_t // atribuim _t la sfarsit de la  typedef pentru diferentiere
+sau folosim echivalent using
+using text_t = std::string;
+using number_t = int;
 
+text_t firstName = Petrica;  // in loc sa folosim string folosim text_t
+number_t age = 36;
 
+_________________________________________
 
+namespace first{
+int x = 1;
+}
+namespace second{
+int x = 2;
+}
+#include <iostream>
+using namespace std;
+int main(){
+using namespace first; // x= 1 dar daca foloseam using namespace second atunci x=2
+cout<<x; //  sau putem sa punem direct cout<<fist::x; fara a utiliza: using namespace first;
+return 0;
+}
 
+//exemplu avem atunci cand folosim: using namespace std;
+//ca sa nu mai scriem de fiecare data std::cout
+_______________________________________
+
+//aici daca introducem  numele: Bro Code daca exista spatiu acesta v-a lua doar primul nume
+string name;
+cout<<"what's your full name?";
+cin>>name; 
+
+pentru a luat intreaga linie
+
+string name;
+getline(cin >>ws,name); // >>ws Extragerea se oprește de indata ce este gasit un caracter care nu are spațiu alb.
+                        // Aceste caractere de spații albe extrase sunt eliminate.
+cout<<name;
+_______________________________________
+
+// functii librarii
+https://cplusplus.com
+
+______________________________________
 
 
 
