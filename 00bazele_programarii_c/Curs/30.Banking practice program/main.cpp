@@ -40,9 +40,11 @@ int main() {
 	} while(choice != 4);
 	return 0;
 }
+
 void showBalance(double balance) {
 	cout << "In depozit ai Ron " << setprecision(2) << fixed << balance << endl; // setprecision(2)<<fixed pentru precizia .00
 }
+
 double deposit() {
 	double amount = 0;
 	cout << "Introdu suma pentru depozitare" << endl;
@@ -55,12 +57,13 @@ double deposit() {
 		return 0;
 	}
 }
+
 double withdraw(double balance) {
 	double amount = 0;
 	cout << "Introdu o suma pentru retragere: ";
 	cin >> amount;
 	amount = amount < 0 ? 0 - amount : amount;
-	if(balance < amount) {
+	if(balance < amount ) {
 		cout << "Nu sunt suficiente fonduri!" << endl;
 		return 0;
 	} else {
