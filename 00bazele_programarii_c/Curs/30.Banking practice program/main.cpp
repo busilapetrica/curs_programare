@@ -49,6 +49,7 @@ double deposit() {
 	double amount = 0;
 	cout << "Introdu suma pentru depozitare" << endl;
 	cin >> amount;
+
 	cout << endl;
 	if(amount > 0) {
 		return amount;
@@ -62,7 +63,13 @@ double withdraw(double balance) {
 	double amount = 0;
 	cout << "Introdu o suma pentru retragere: ";
 	cin >> amount;
-	amount = amount < 0 ? 0 - amount : amount;
+
+	if(amount < 0){
+	    amount = 0 - amount;
+	 }else{
+	        amount;
+	    }
+
 	if(balance < amount ) {
 		cout << "Nu sunt suficiente fonduri!" << endl;
 		return 0;
