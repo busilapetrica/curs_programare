@@ -35,7 +35,7 @@ char getUserChoice() {
 		cout << "'h' Pentru Hartie" <<endl;
 		cout <<"'f' Pentru foarfeca" <<endl;
 		cin >> player;
-	} while(player != 'r' && player != 'p' && player != 's');
+	} while(player != 'p' && player != 'h' && player != 'f');
 	return player;
 }
 
