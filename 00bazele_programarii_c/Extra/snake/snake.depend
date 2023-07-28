@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1690288120 source:d:\petrica\03.programare\curs_programare\00bazele_programarii_c\extra\snake\main.cpp
-	<iostream>
-	<conio.h>
-	<windows.h>
-
