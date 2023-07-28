@@ -30,6 +30,8 @@
 *.sdf
 *.pyc
 *.xml
+*.depend
+*doxyfile
 ipch/
 obj/
 [Bb]in
