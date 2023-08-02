@@ -35,7 +35,7 @@ char getUserChoice() {
 		cout << "'h' Pentru Hartie" <<endl;
 		cout <<"'f' Pentru foarfeca" <<endl;
 		cin >> player;
-	} while(player != 'r' && player != 'p' && player != 's');
+	} while(player != 'p' && player != 'h' && player != 'f');
 	return player;
 }
 
@@ -73,27 +73,27 @@ void showChoise(char choise) {
 void chooseWinner(char player,char computer) {
 
     switch(player){
-         case 'p': if(computer == 'r') {
+         case 'p': if(computer == 'p') {
            	     cout << "remiza";
-                 } else if(computer == 'p') {
+                 } else if(computer == 'h') {
                  	cout << "ai pierdut";
                  } else {
                  	cout << "ai castigat";
                  }
            break;
 
-            case 'h': if(computer == 'r') {
-           	     cout << "ai pierdut";
-                 } else if(computer == 'p') {
-                 	cout << "remiza";
+            case 'h': if(computer == 'p') {
+           	     cout << "ai castgat";
+                 } else if(computer == 'h') {
+                 	cout << " remiza";
                  } else {
-                 	cout << "ai castigat";
+                 	cout << "ai pierdut ";
                  }
            break;
 
-            case 'f': if(computer == 'r') {
+            case 'f': if(computer == 'p') {
            	     cout << "Ai pierdut";
-                 } else if(computer == 'p') {
+                 } else if(computer == 'h') {
                  	cout << "Ai castigat";
                  } else {
                  	cout << "Remiza";
