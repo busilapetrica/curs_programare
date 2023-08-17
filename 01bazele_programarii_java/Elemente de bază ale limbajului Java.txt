@@ -1,0 +1,17 @@
+
+Clase:
+Modificatori de acces: public, protected, privat.
+Modificatori fără acces (inclusiv strictfp, final și abstract).
+
+Public:
+-vizibila pentru toate clasele si toate pachetele.
+
+Protected:
+-folosit in cazuri foarte speciale 
+-Subclasa poate vedea membrul protejat numai prin moştenire
+
+Provat:
+
+
+
+

@@ -30,8 +30,13 @@
 *.sdf
 *.pyc
 *.xml
+*.lock
+*.log
+*.ini
 *.depend
 *doxyfile
+*plugins
+*mylyn
 ipch/
 obj/
 [Bb]in
