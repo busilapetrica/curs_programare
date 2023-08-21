@@ -1,7 +1,4 @@
-
-Clase:
 Modificatori de acces: public, protected, privat.
-Modificatori fără acces (inclusiv strictfp, final și abstract).
 
 Public:
 -vizibila pentru toate clasele si toate pachetele.
@@ -10,8 +7,43 @@ Protected:
 -folosit in cazuri foarte speciale 
 -Subclasa poate vedea membrul protejat numai prin moştenire
 
-Provat:
+Privat:
 
 
+Modificatori fără acces (inclusiv strictfp, final și abstract).
+
+Final:
+-Aceasta clasa nu poate avea subclasa
+
+Abstract:
+-se termina cu punct si virgula 
+- clasa abstracta nu cont
+
+
+Diferenta dintre Metode si Constructori:
+Metodele și constructorii sunt două concepte fundamentale în programarea orientată pe obiect.
+Cu toate că ambele sunt blocuri de cod reutilizabile într-o clasă, ele au roluri diferite și sunt utilizate în contexte diferite. Iată diferențele dintre metode și constructori:
+
+    Rol principal:
+        Constructori: Constructorii sunt utilizate pentru a inițializa obiecte noi când sunt create instanțe ale unei clase. Ei stabilesc starea inițială a obiectului și sunt chemați în momentul în care folosim operatorul new.
+        Metode: Metodele reprezintă acțiuni sau comportamente ale obiectului. Ele sunt utilizate pentru a executa operații specifice asupra obiectului sau pentru a returna anumite valori.
+
+    Nume:
+        Constructori: Au același nume ca și clasa în care sunt definiti. Ei nu au tip de returnare explicit (nu pot returna valori).
+        Metode: Au nume distinct de clase și pot avea un tip de returnare specificat (dacă returnează o valoare) sau pot fi metode de tip void (care nu returnează nimic).
+
+    Apel:
+        Constructori: Sunt apelați automat atunci când se creează o nouă instanță a clasei folosind operatorul new. Nu pot fi apelați direct în timpul execuției programului.
+        Metode: Trebuie apelate explicit folosind numele metodei și parantezele (). Ele pot fi apelate în orice moment în timpul execuției programului.
+
+    Returnare:
+        Constructori: Nu pot returna nicio valoare, deoarece sunt folosiți pentru a inițializa obiecte, nu pentru a furniza rezultate.
+        Metode: Pot returna valori, în funcție de tipul de returnare specificat.
+
+    Parametri:
+        Constructori: Pot primi parametri pentru a inițializa atributele obiectului în momentul creării.
+        Metode: Pot primi parametri pentru a efectua operații pe obiect sau pentru a produce rezultate bazate pe parametrii furnizați.
+
+În esență, constructorii sunt speciali întrucât sunt responsabili de inițializarea obiectelor, în timp ce metodele reprezintă comportamente și acțiuni specifice ale obiectelor.
 
 
