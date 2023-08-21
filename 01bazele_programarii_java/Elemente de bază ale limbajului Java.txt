@@ -28,23 +28,31 @@
 ________________________________________
 
     Modificatori de acces:
-    public: Membrii declarați cu acest modificator sunt vizibili în orice context, indiferent de clasă sau pachet. Ei pot fi accesați din orice altă clasă.
+    	public: Membrii declarați cu acest modificator sunt vizibili în orice context, indiferent de clasă sau pachet. Ei pot fi accesați din orice altă clasă.
 
-    protected: Membrii declarați cu acest modificator sunt vizibili în cadrul aceleiași clase, a claselor din același pachet și a claselor copil (subclaselor), chiar dacă acestea sunt în alte pachete.
+   	 protected: Membrii declarați cu acest modificator sunt vizibili în cadrul aceleiași clase, a claselor din același pachet și a claselor copil (subclaselor), chiar dacă acestea sunt în alte pachete.
 
-    default (niciun modificator): Acesta este implicit atunci când nu specifici niciun modificator de acces. Membrii cu acest modificator sunt vizibili doar în cadrul aceluiași pachet.
+    	default (niciun modificator): Acesta este implicit atunci când nu specifici niciun modificator de acces. Membrii cu acest modificator sunt vizibili doar în cadrul aceluiași pachet.
 
-    private: Membrii declarați cu acest modificator sunt vizibili doar în cadrul aceleiași clase. Aceștia nu pot fi accesibili din alte clase, indiferent de pachet.
+    	private: Membrii declarați cu acest modificator sunt vizibili doar în cadrul aceleiași clase. Aceștia nu pot fi accesibili din alte clase, indiferent de pachet.
 
 ________________________________________
 
        strictfp:
-    strictfp este un cuvânt cheie folosit pentru a restricționa modul în care operațiile cu virgulă mobilă (floating-point) sunt efectuate în interiorul clasei sau al metodei. Atunci când o clasă sau o metodă este marcată cu strictfp, calculele cu numere cu virgulă mobilă din interiorul acelei clase sau metode vor fi efectuate conform specificațiilor IEEE 754, asigurând astfel portabilitatea între diferite platforme.
+    	strictfp este un cuvânt cheie folosit pentru a restricționa modul în care operațiile cu virgulă mobilă (floating-point) sunt efectuate în interiorul clasei sau al metodei. 
+    	Atunci când o clasă sau o metodă este marcată cu strictfp, calculele cu numere cu virgulă mobilă din interiorul acelei clase sau metode 
+    	vor fi efectuate conform specificațiilor IEEE 754, asigurând astfel portabilitatea între diferite platforme.
 
     final:
-    final este un cuvânt cheie care poate fi aplicat atât la clase, metode, cât și la variabile. Atunci când este aplicat la o clasă, înseamnă că clasa respectivă nu poate fi extinsă de alte clase (nu poate avea subclase). Când este aplicat la o metodă, înseamnă că metoda nu poate fi suprascrisă în subclase. Și când este aplicat la o variabilă, înseamnă că acea variabilă devine o constantă, adică nu poate fi reatribuită după ce a primit o valoare inițială.
+   	 final este un cuvânt cheie care poate fi aplicat atât la clase, metode, cât și la variabile.
+ 	Atunci când este aplicat la o clasă, înseamnă că clasa respectivă nu poate fi extinsă de alte clase (nu poate avea subclase).
+ 	Când este aplicat la o metodă, înseamnă că metoda nu poate fi suprascrisă în subclase.
+	 Și când este aplicat la o variabilă, înseamnă că acea variabilă devine o constantă, adică nu poate fi reatribuită după ce a primit o valoare inițială.
 
     abstract:
-    abstract este un cuvânt cheie folosit pentru a declara clase abstracte sau metode abstracte. O clasă abstractă nu poate fi instantiată direct și este destinată să servească drept bază pentru alte clase. O metodă abstractă este o metodă declarată fără implementare în cadrul clasei și trebuie să fie implementată în subclase care extind clasa curentă.
+    	abstract este un cuvânt cheie folosit pentru a declara clase abstracte sau metode abstracte.
+	 O clasă abstractă nu poate fi instantiată direct și este destinată să servească drept bază pentru alte clase.
+	 O metodă abstractă este o metodă declarată fără implementare în cadrul clasei și trebuie să fie implementată în subclase care extind clasa curentă.
 
-În concluzie, acești termeni (strictfp, final și abstract) nu au legătură directă cu modificatorii de acces (public, private, protected, niciun modificator). Acești termeni descriu caracteristici diferite ale clasei, metodelor sau a modului în care sunt efectuate operațiile cu numere cu virgulă mobilă.
+	În concluzie, acești termeni (strictfp, final și abstract) nu au legătură directă cu modificatorii de acces (public, private, protected, niciun modificator). 
+	Acești termeni descriu caracteristici diferite ale clasei, metodelor sau a modului în care sunt efectuate operațiile cu numere cu virgulă mobilă.
