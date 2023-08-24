@@ -22,9 +22,9 @@ public class MyFrame extends JFrame {
 
 	Calendar calendar;
 
-	SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm:ss a");
-	SimpleDateFormat dayFormat = new SimpleDateFormat("EEEE");
-	SimpleDateFormat dateFormat = new SimpleDateFormat("MMMMM dd, yyyy");
+	SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss a");
+	SimpleDateFormat dayFormat = new SimpleDateFormat("MMMM");
+	SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE, d MMM yyyy");
 
 	JLabel timeLabel = new JLabel();
 	JLabel dayLabel = new JLabel();
@@ -81,6 +81,7 @@ public class MyFrame extends JFrame {
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
+				
 				e.printStackTrace();
 			}
 		}
