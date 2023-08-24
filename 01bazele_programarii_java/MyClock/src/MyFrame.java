@@ -27,13 +27,14 @@ public class MyFrame extends JFrame {
 	JLabel dateLabel = new JLabel();
 
 	MyFrame() {
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// x-ul de inchidere
-		this.setTitle("My Clock Program"); // titlul
-		this.setLayout(new FlowLayout());
-		this.setSize(350, 250); // dimensiunea ceasului
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// X-ul de inchidere
+		this.setTitle("My Clock Program"); // Titlul
+		this.setLayout(new FlowLayout()); // this se refera la instanța curenta a clasei JFrame.
+	                                     //setLayout(new FlowLayout()) setează managerul de aranjare al ferestrei curente la un nou obiect FlowLayout.
+		this.setSize(350, 250); // Dimensiunea ceasului
 		this.setResizable(false); // Blochează redimensionarea ferestrei.
 		this.setVisible(true); // vizibilitate
-		this.setAlwaysOnTop(true); // Set the frame to always stay on top
+		this.setAlwaysOnTop(true); // Ceasul v-a sta tot timpul deasupra
 
 		timeLabel.setFont(new Font("Verdana", Font.PLAIN, 50));
 		timeLabel.setForeground(new Color(255, 255, 255));
@@ -70,7 +71,7 @@ public class MyFrame extends JFrame {
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 		}
