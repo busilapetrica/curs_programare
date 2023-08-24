@@ -1,4 +1,9 @@
-   Diferenta dintre Metode si Constructori:
+ 
+Documentatie:
+ https://docs.oracle.com/en/java/javase/index.html
+
+
+ Diferenta dintre Metode si Constructori:
   Metodele și constructorii sunt două concepte fundamentale în programarea orientată pe obiect.
   Cu toate că ambele sunt blocuri de cod reutilizabile într-o clasă, ele au roluri diferite și sunt utilizate în contexte diferite. Iată diferențele dintre metode și constructori:
 

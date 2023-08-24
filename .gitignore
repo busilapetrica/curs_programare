@@ -37,6 +37,12 @@
 *doxyfile
 *plugins
 *mylyn
+.project
+.classpath
+.class
+.prefs
+
+
 ipch/
 obj/
 [Bb]in
